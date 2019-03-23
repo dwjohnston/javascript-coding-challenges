@@ -25,7 +25,12 @@ describe("fizzBuzz", () => {
 
 describe("findLargest", () => {
     it("returns the right value", () => {
-        expect(findLargest([11, 22, 999])).toEqual(999);
+
+        const input = [999, 22, 33]
+        const cloneInput = [...input];
+
+        expect(findLargest(input)).toEqual(999);
+        expect(input).toEqual(cloneInput); //findLargest should not mutate the original!
     })
 });
 
