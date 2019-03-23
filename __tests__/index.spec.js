@@ -1,6 +1,6 @@
 const index = require("../index");
 
-const { sanityTestFunction, adder, fizzBuzz } = index;
+const { sanityTestFunction, adder, fizzBuzz, findLargest, isSquare } = index;
 
 describe("sanityTestFunction", () => {
     it("returns 123", () => {
@@ -22,3 +22,19 @@ describe("fizzBuzz", () => {
         expect(fizzBuzz()).toEqual(expectedResult);
     })
 })
+
+describe("findLargest", () => {
+    it("returns the right value", () => {
+        expect(findLargest([11, 22, 999])).toEqual(999);
+    })
+});
+
+describe("isSquare", () => {
+    it("returns the right bool", () => {
+        expect(isSquare(-1)).toEqual(false);
+        expect(isSquare(15)).toEqual(false);
+        expect(isSquare(25)).toEqual(true);
+        expect(isSquare(0)).toEqual(true);
+        expect(isSquare(1.1)).toEqual(false);
+    })
+}); 

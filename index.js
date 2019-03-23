@@ -21,6 +21,7 @@ function fizzBuzz() {
 /*
     eg. isSquare(15) === false
     isSquare(25) === true
+    isSquare(-1) === false (negative numbers always return false)
 */
 function isSquare(n) {
 
