@@ -39,4 +39,6 @@ module.exports = {
     sanityTestFunction,
     adder,
     fizzBuzz,
+    isSquare,
+    findLargest,
 }
