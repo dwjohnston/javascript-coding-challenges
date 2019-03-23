@@ -1,0 +1,22 @@
+{
+  "name": "javascript-coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwjohnston/javascript-coding-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwjohnston/javascript-coding-challenges/issues"
+  },
+  "homepage": "https://github.com/dwjohnston/javascript-coding-challenges#readme",
+  "devDependencies": {
+    "jest": "^24.5.0"
+  }
+}
