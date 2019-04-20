@@ -34,6 +34,20 @@ function findLargest(array) {
 
 }
 
+/**
+ * For the given two arrays - return only the elements that are common to both of them. 
+ * 
+ * If an element occurs in an array twice, return it only once. 
+ * 
+ * eg. findCommonElements([1,2,3], [1,2]) === [1,2]; 
+ * eg. findCommonElements([1,1,1,2,3], [1,1,2]) === [1,2]
+ * @param {*} array1 
+ * @param {*} array2 
+ */
+function findCommonElements(array1, array2) {
+
+}
+
 
 module.exports = {
     sanityTestFunction,
@@ -41,4 +55,5 @@ module.exports = {
     fizzBuzz,
     isSquare,
     findLargest,
+    findCommonElements, 
 }

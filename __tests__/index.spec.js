@@ -1,6 +1,13 @@
 const index = require("../index");
 
-const { sanityTestFunction, adder, fizzBuzz, findLargest, isSquare } = index;
+const {
+    sanityTestFunction,
+    adder,
+    fizzBuzz,
+    findLargest,
+    isSquare,
+    findCommonElements
+} = index;
 
 describe("sanityTestFunction", () => {
     it("returns 123", () => {
@@ -42,4 +49,28 @@ describe("isSquare", () => {
         expect(isSquare(0)).toEqual(true);
         expect(isSquare(1.1)).toEqual(false);
     })
-}); 
+});
+
+
+describe("findCommonElements)", () => {
+    it("returns an array of deduped common elements", () => {
+
+        const result = findCommonElements([1,2,3], [1,2]); 
+        expect(result.length).toEqual(2); 
+        expect(result).toEqual(expect.arrayContaining([1,2])); 
+
+        const result2 =  findCommonElements([1,1,1,2,2,3], [1,1,2,2]); 
+        expect(result2.length).toEqual(2); 
+        expect(result2).toEqual(expect.arrayContaining([1,2])); 
+
+
+        //Lets check that it works in reverse order
+
+        const result3 =  findCommonElements([2,2,2,1,3], [1,1,2,2]); 
+        expect(result3.length).toEqual(2); 
+        expect(result3).toEqual(expect.arrayContaining([1,2])); 
+
+
+        
+    }); 
+})
