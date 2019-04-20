@@ -7,7 +7,8 @@ const {
     findLargest,
     isSquare,
     findCommonElements, 
-    dedupeArray, 
+    dedupeArray,
+    returnAFunction,  
 } = index;
 
 describe("sanityTestFunction", () => {
@@ -88,3 +89,12 @@ describe("findCommonElements)", () => {
         
     }); 
 })
+
+
+describe("returnAFunction", () => {
+
+    it ("returns a function that creates an array of the correct length", () => {
+        const fn = returnAFunction(10); 
+        expect (fn().length).toEqual(10); 
+    }); 
+}); 

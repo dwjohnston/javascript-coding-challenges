@@ -60,6 +60,19 @@ function findCommonElements(array1, array2) {
 }
 
 
+/*
+    Return a _function_ that when called, returns an array of length n
+
+    eg. 
+    const newFn = returnAFn(10); 
+    const array = newFn(); 
+    array.length === 10; //true
+*/
+function returnAFunction(n) {
+
+}; 
+
+
 module.exports = {
     sanityTestFunction,
     adder,
@@ -68,4 +81,5 @@ module.exports = {
     findLargest,
     findCommonElements, 
     dedupeArray, 
+    returnAFunction
 }
