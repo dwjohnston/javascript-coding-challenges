@@ -6,7 +6,8 @@ const {
     fizzBuzz,
     findLargest,
     isSquare,
-    findCommonElements
+    findCommonElements, 
+    dedupeArray, 
 } = index;
 
 describe("sanityTestFunction", () => {
@@ -51,6 +52,19 @@ describe("isSquare", () => {
     })
 });
 
+describe("dedupeArray", () => {
+    it ("returns the array with element only appearing once", () => {
+
+        const result = dedupeArray([1,1,2,3]); 
+        expect(result.length).toEqual(2); 
+        expect(result).toEqual(expect.arrayContaining([1,2])); 
+
+        const result2 = dedupeArray(["one", "one", "One"]); 
+        expect(result2.length).toEqual(2); 
+        expect(result2).toEqual(expect.arrayContaining(["one", "One"]));
+    }); 
+    
+}); 
 
 describe("findCommonElements)", () => {
     it("returns an array of deduped common elements", () => {

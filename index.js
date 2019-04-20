@@ -35,6 +35,17 @@ function findLargest(array) {
 }
 
 /**
+ * For the given array, return each of its elements only once. 
+ * 
+ * eg. dedupeArray([1,1,2,3]) === [1,2,3]
+ * eg. dedupeArray(["one", "one", "One"]) === ["one", "One"]; 
+ * @param {*} array 
+ */
+function dedupeArray(array) {
+
+}
+
+/**
  * For the given two arrays - return only the elements that are common to both of them. 
  * 
  * If an element occurs in an array twice, return it only once. 
@@ -56,4 +67,5 @@ module.exports = {
     isSquare,
     findLargest,
     findCommonElements, 
+    dedupeArray, 
 }
